@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "label": "npm: start",
+      "detail": "react-scripts start"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "label": "npm: build",
+      "detail": "react-scripts build"
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "group": "test",
+      "label": "npm: test",
+      "detail": "react-scripts test"
+    },
+    {
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "lint"],
+      "group": "build",
+      "label": "ESLint",
+      "detail": "Run ESLint on the project"
+    },
+    {
+      "type": "shell",
+      "command": "npm",
+      "args": ["run", "format"],
+      "group": "build",
+      "label": "Prettier",
+      "detail": "Format code with Prettier"
+    }
+  ],
+  "version": "2.0.0"
+}
